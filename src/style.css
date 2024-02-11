@@ -1,0 +1,134 @@
+@import "./css/colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+html {
+    font-size: 62.5%;
+    min-height: 93.3rem;
+}
+
+body {
+    /* height: 100vh; */
+    background-color: var(--light-blue-100);
+}
+
+header {
+    height: 9.6rem;
+    width: 100%;
+}
+
+.logo-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-container > img {
+    margin: 0 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+}
+
+main > textarea {
+    margin: 5rem auto;
+    width: 90%;
+    min-height: 4.8rem;
+    height: 32.4rem;
+    max-width: max-content;
+    font-size: 3.2rem;
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    border: none;
+}
+
+textarea::placeholder {
+    color: var(--dark-blue-300);
+}
+
+body > span {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--gray-400);
+}
+
+body > span > img {
+    margin: 1rem 0.6rem 1rem 0;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.buttons {
+    height: 6.7rem;
+    border-radius: 2.4rem;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    margin: 1.2rem 0;
+    border: 1px solid var(--dark-blue-300);
+    font-size: 1.6rem;
+}
+
+.encriptar {
+    background-color: var(--dark-blue-300);
+    color: white;
+}
+.desencriptar {
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+}
+
+.output-container {
+    margin-top: 3rem;
+    display: flex;
+    padding: 1rem;
+    height: 18.6rem;
+}
+
+.message-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding: 3.2rem;
+    border-radius: 3.2rem;
+    -webkit-border-radius: 3.2rem;
+    -moz-border-radius: 3.2rem;
+    -ms-border-radius: 3.2rem;
+    -o-border-radius: 3.2rem;
+    box-shadow: 0 2.4rem 3.2rem -0.8rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: var(--gray-500);
+}
+
+.message-container > span {
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+    color: var(--gray-400);
+}
